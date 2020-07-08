@@ -34,7 +34,7 @@
 		</nav>
 
 		<div class="jumbotron">
-			<h1>Contacto</h1>
+			<h1>Hoteles</h1>
 		</div>
 
 		<div class="container">
@@ -45,9 +45,51 @@
 				</ol>
 			</nav>
 
-			<span>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae, veritatis minus pariatur totam ad numquam nesciunt blanditiis debitis aspernatur, incidunt consequuntur animi qui nemo reprehenderit. Recusandae veritatis doloribus dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut laborum placeat pariatur similique, nobis recusandae commodi rem repellat facere aspernatur illo earum, excepturi quasi a libero asperiores deserunt soluta minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga libero nam, voluptatem deleniti dignissimos! Dignissimos optio, mollitia excepturi impedit voluptatibus deleniti fugit dolorum provident ratione vitae ducimus modi numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta praesentium eius repellendus explicabo iusto quis corrupti optio aperiam? A porro eligendi perspiciatis voluptatem laborum id itaque rerum iste earum!
-			</span>
+			<form>
+				<div class="form-row">
+					<div class="form-group col-sm-6">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+					</div>
+					<div class="form-group col-sm-6">
+						<label for="apellido">Apellido</label>
+						<input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+					</div>
+				</div>
+				<div class="form-group">
+					<labe for="email">Email</labe>
+					<input type="email" class="form-control" id="email"	placeholder="Ingrese su email">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-9">
+						<label for="domicilio">Domicilio</label>
+						<input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="provincia">Estado</label>
+						<select id="provincia" class="form-control">
+							<option selected>Ciudad de México</option>
+							<option>Estado de México</option>
+							<option>Monterrey</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="comentario">Comentario</label>
+					<textarea id="comentario" class="form-control" rows="6"></textarea>
+				</div>
+
+				<div class="form-group">
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="gridCheck">
+						<label for="gridCheck" class="form-check-label">
+							Quiero que me contacten
+						</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			</form>
 		</div>
 
 		<footer>
