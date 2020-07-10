@@ -129,16 +129,48 @@
 				</div>
 
 				<div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-					<div class="d-flex justify-content-center">
-						<div class="card" style="width: 18rem;">
-							<div class="card-header">
-								Tarjetas aceptadas
+					<div class="accordion" id="accordionTarjetas">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">Tarjeta Básica</button>
+								</h5>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Tarjeta básica</li>
-								<li class="list-group-item">Tarjeta VIP</li>
-								<li class="list-group-item">Tarjeta Black</li>
-							</ul>
+
+							<div class="collapse" id="collapseBasica" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+								<div class="card-body">
+									Puedes reservar en tres pagos sin intereses.
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">Tarjeta VIP</button>
+								</h5>
+							</div>
+
+							<div class="collapse" id="collapseVIP" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+								<div class="card-body">
+									Puedes reservar en 6 pagos sin intereses.
+									Al llegar, recibirás una canasta de obsequios para disfrutar de tu estancia.
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">Tarjeta Black</button>
+								</h5>
+							</div>
+
+							<div class="collapse" id="collapseBlack" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+								<div class="card-body">
+									Puedes reservar en 12 pagos sin intereses. Al llegar, recibirás una canasta de obsequios para disfrutar de tu estancia, acceso al gimnasio y spa todos los días de tus vacaciones.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

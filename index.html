@@ -44,17 +44,29 @@
 				</ol>
 			</nav>
 
-			<div class="d-flex flex-wrap">
+			<div class="row">
 				<div class="col-sm-4">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+				</div>
+				<div class="col-sm-4">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+				</div>
+				<div class="col-sm-4">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4 collapse multi-collapse" id="funciona">
 					<h3>¿Cómo funciona?</h3>
 					<p>Busca los hoteles de acuerdo a tu preferencia.</p>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 collapse multi-collapse" id="reserva">
 					<h3>¿Dónde puedo reservar?</h3>
 					<p>Elige la ciudad que te interese y luego realiza la reserva con tus datos.</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 collapse multi-collapse" id="pago">
 					<h3>¿Cómo pago?</h3>
 					<p>Utiliza tu tarjeta favorita.</p>
 				</div>

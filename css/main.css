@@ -1,15 +1,16 @@
+.jumbotron.inicio {
+	background-image: url(../img/hotel.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 65vh;
+}
+
 .jumbotron {
 	background-color: yellow;
 	color: black;
 	margin-top: 50px;
 }
 
-.inicio {
-	background-image: url(../img/hotel.jpg);
-	background-position: center center;
-	background-size: cover;
-	height: 65vh;
-}
 .card-hotel {
 	flex: 1 200px;
 	margin-top: 10px;
