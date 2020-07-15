@@ -73,6 +73,28 @@
 			</div>
 			<hr>
 
+			<div class="carousel slide" id="carouselControls" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/hotel1.jpg" alt="Primer slide" class="d-block w-100">
+					</div>
+					<div class="carousel-item">
+						<img src="img/hotel2.webp" alt="Segundo slide" class="d-block w-100">
+					</div>
+					<div class="carousel-item">
+						<img src="img/hotel3.jpg" alt="Tercer slide" class="d-block w-100">
+					</div>
+				</div>
+				<a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+
 			<div class="d-flex flex-wrap">
 				<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
 					<img class="card-img-top" src="img/barca.jpg" alt="Barcelona">
@@ -223,6 +245,9 @@
 			$(function() {
 				$("[data-toggle='tooltip']").tooltip();
 				$("[data-toggle='popover']").popover();
+				$('.carousel').carousel({
+					interval: 2500
+				});
 			});
 		</script>
 	</body>
