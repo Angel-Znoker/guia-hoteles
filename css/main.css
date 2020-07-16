@@ -21,7 +21,7 @@
 	border-radius: 0;
 }
 
-div .btn-primary {
+div .btn-primary, div .btn-outline-success {
 	margin-top: 10px;
 }
 

@@ -176,7 +176,7 @@
 			</div>
 
 			<div>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contacto">Contacto</button>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
 			</div>
 
 			<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -247,6 +247,30 @@
 				$("[data-toggle='popover']").popover();
 				$('.carousel').carousel({
 					interval: 2500
+				});
+
+				$('#contacto').on('show.bs.modal', function(e) {
+					console.log('El modal se está mostrando');
+
+					$('#contactoBtn').removeClass('btn-primary');
+					$('#contactoBtn').addClass('btn-outline-success');
+					$('#contactoBtn').prop('disabled', true);
+				});
+
+				$('#contacto').on('shown.bs.modal', function(e) {
+					console.log('El modal se mostró');
+				});
+
+				$('#contacto').on('hide.bs.modal', function(e) {
+					console.log('El modal se está ocultando');
+				});
+
+				$('#contacto').on('hidden.bs.modal', function(e) {
+					console.log('El modal se ocultó');
+					
+					$('#contactoBtn').removeClass('btn-outline-success');
+					$('#contactoBtn').addClass('btn-primary');
+					$('#contactoBtn').prop('disabled', false);
 				});
 			});
 		</script>
