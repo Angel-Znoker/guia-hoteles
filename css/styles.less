@@ -1,0 +1,47 @@
+@yellow: #fffa19;
+
+.margenes(@top: 10px, @bottom: 0px) {
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+.jumbotron.inicio {
+	background-image: url(../img/hotel.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 65vh;
+}
+
+.jumbotron {
+	background-color: @yellow;
+    color: black;
+    .margenes(50px, 2rem);
+}
+
+.card-hotel {
+	flex: 1 200px;
+	.margenes(10px);
+}
+
+.btn-reserva {
+	width: 100%;
+	border-radius: 0;
+}
+
+div .btn-primary, div .btn-outline-success {
+	.margenes(10px);
+}
+
+footer {
+	padding: 10px 10px 0 10px;
+	background-color: @yellow;
+	.margenes(10px);
+}
+
+.footer-address-icon {
+	padding-right: 10px;
+}
+
+.tab-content {
+	padding: 10px;
+}
