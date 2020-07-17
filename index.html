@@ -233,44 +233,11 @@
 		</footer>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<!-- build:js dist/index.js -->
+		<!-- build:js dist/main.js -->
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-		<script>
-			$(function() {
-				$("[data-toggle='tooltip']").tooltip();
-				$("[data-toggle='popover']").popover();
-				$('.carousel').carousel({
-					interval: 2500
-				});
-
-				$('#contacto').on('show.bs.modal', function(e) {
-					console.log('El modal se está mostrando');
-
-					$('#contactoBtn').removeClass('btn-primary');
-					$('#contactoBtn').addClass('btn-outline-success');
-					$('#contactoBtn').prop('disabled', true);
-				});
-
-				$('#contacto').on('shown.bs.modal', function(e) {
-					console.log('El modal se mostró');
-				});
-
-				$('#contacto').on('hide.bs.modal', function(e) {
-					console.log('El modal se está ocultando');
-				});
-
-				$('#contacto').on('hidden.bs.modal', function(e) {
-					console.log('El modal se ocultó');
-					
-					$('#contactoBtn').removeClass('btn-outline-success');
-					$('#contactoBtn').addClass('btn-primary');
-					$('#contactoBtn').prop('disabled', false);
-				});
-			});
-		</script>
+		<script src="js/index.js"></script>
 		<!-- endbuild -->
 	</body>
 </html>
