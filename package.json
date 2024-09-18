@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/Angel-Znoker/guia-hoteles#readme",
 	"devDependencies": {
-		"browser-sync": "^2.26.10",
+		"browser-sync": "^2.29.3",
 		"copyfiles": "^2.3.0",
 		"cssmin": "^0.4.3",
 		"del": "^5.1.0",
